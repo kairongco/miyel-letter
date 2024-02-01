@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Letter for you</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f7f7f7;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #e74c3c;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        #loveLetter {
+            width: 70%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            white-space: pre-line;
+            display: none;
+        }
+
+        #hiddenMessage {
+            color: #e74c3c;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 onclick="toggleLoveLetter()">Read Me Miyel!</h1>
+
+    <div id="loveLetter">
+        <p>Happy Valentine's Day! I hope you appreciate this simple gift of mine to you.,</p>
+		
+        Hello Miyel, I know na nabanggit ko sayo na I love receiving letters diba?
+		Pero me writing a letter for someone? It was something na I'm not good at.
+		Writing this message for you is special for me, and I hope it is for you too. 
+		Alam mo ba sabi dati ni Anne sakin "May mahahanap ka pa namang iba na mas deserve yung love mo,
+		malay mo nasa campus mo lang din pala" and it turns out na she was right. Nandon ka, I found you
+		nung hindi naman kita hinahanap, and I'm thankful that you came into my life. Thank you for saving me.
+		Thank you for showing me your love. Thank you for being there. And thank you for being my Miyel.
+		
+		Please huwag ka sana mapagod mahalin ako, at kung dumating man yung point na yon, pipilitin ko
+		ipapaalala sayo kung bakit mo ako minahal. And if sa akin mangyari yon, sana ipaalala mo rin.
+		
+		"You shine like a star and light like the sun. Your brightness blinded me,
+		but I'm glad that I'm blinded by your love.."Wishing you all the love and happiness you deserve on this special day and always.</p>
+
+        <p>You mean the world to me,
+		Panda<p>
+        
+
+        <div id="hiddenMessage">. ....... .-.. --- ...- . ....... -.-- --- ..- ....... -- .. -.-- . .-.. --..-- ....... ... --- -... .-. .- .-.-.-
+</div>
+    </div>
+
+    <script>
+        function toggleLoveLetter() {
+            var loveLetter = document.getElementById("loveLetter");
+            loveLetter.style.display = loveLetter.style.display === "none" ? "block" : "none";
+        }
+    </script>
+	 
+</body>
+</html>
